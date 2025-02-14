@@ -625,7 +625,6 @@ header {
     margin-bottom: 10px;
     color: var(--font-color);
     font-weight: bold;
-    text-align: left;
 }
 
 .join-us-content p {
@@ -667,6 +666,47 @@ header {
     border-radius: 12px;
     box-shadow: 5px 12px 10px 10px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 480px) {
+    .join-us-container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Reduce padding for a compact look */
+        width: 95%; /* Utilize more screen space */
+    }
+
+    .join-us-content {
+        width: 100%;
+    }
+
+    .join-us-content h1 {
+        font-size: 28px; /* Reduce heading size for better fit */
+        margin-bottom: 8px;
+    }
+
+    .join-us-content p {
+        font-size: 14px; /* Make paragraph text smaller */
+        line-height: 1.4;
+    }
+
+    .join-us-content .btn {
+        padding: 8px 15px;
+        font-size: 14px; /* Smaller button for mobile */
+        width: auto;
+    }
+
+    .join-us-image {
+        width: 100%;
+        margin-top: 15px; /* Add spacing between text and image */
+    }
+
+    .join-us-image img {
+        max-width: 90%; /* Ensure image is responsive */
+        border-radius: 10px;
+        box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
 
 
 /* Job Apply Section */
