@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="/HOMESPECTOR/CSS/articles_view2.css">
+    <title>Header Design</title>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="content-box">
+            <div class="header">
+                <header class="top-bar">
+                    <div class="container">
+                        <!-- Social Icons -->
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/t.homeinspector/?locale=th_TH">
+                                <img src="/HOMESPECTOR/icon/ICON/Fb.png" alt="Facebook">
+                            </a>
+                            <a href="https://www.instagram.com/t.homeinspector/">
+                                <img src="/HOMESPECTOR/icon/ICON/IG.png" alt="Instagram">
+                            </a>
+                            <a href="https://page.line.me/t.home?openQrModal=true">
+                                <img src="/HOMESPECTOR/icon/ICON/line.png" alt="Line">
+                            </a>
+                            <a href="tel:082-045-6165">
+                                <img src="/HOMESPECTOR/icon/ICON/phone.png" alt="Phone">
+                            </a>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="/HOMESPECTOR/Homepage/index.html">
+                                <img src="/HOMESPECTOR/img/s1.png" alt="T. Home Inspector Logo">
+                            </a>
+                        </div>
+
+                        <div class="actions">
+                            <!-- Language Switcher -->
+                            <div class="language-switcher">
+                                <a href="?lang=th" class="lang-link">
+                                    <img src="/HOMESPECTOR/icon/ICON/thai.png" alt="Thai" title="ภาษาไทย">
+                                </a>
+                                <a href="?lang=en" class="lang-link">
+                                    <img src="/HOMESPECTOR/icon/ICON/eng.png" alt="English" title="English">
+                                </a>
+                            </div>
+
+                            <!-- Search Icon -->
+                            <i id="search-icon" class="fas fa-search"></i>
+                            <div id="search-bar" class="search-bar">
+                                <input type="text" placeholder="Search..." />
+                                <button onclick="searchFunction()">Search</button>
+                            </div>
+                            <!-- Hamburger Icon -->
+                            <i id="hamburger-icon" class="fas fa-bars hamburger-icon" onclick="toggleMenu()"></i>
+                        </div>
+                </header>
+                <nav class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="/HOMESPECTOR/Homepage/index.html" data-translate="nav.home">หน้าหลัก</a>
+                        </li>
+                        <li><a href="/HOMESPECTOR/Homepage/service.html" data-translate="nav.services">บริการ</a></li>
+                        <li><a href="/HOMESPECTOR/Homepage/promotion.html" data-translate="nav.promotion">สิทธิพิเศษ</a>
+                        </li>
+                        <li><a href="/HOMESPECTOR/Homepage/projects_media.html" data-translate="nav.projects">ผลงาน</a>
+                        </li>
+
+                        <!-- Dropdown Menu -->
+                        <li class="dropdown">
+                            <a href="#" class="menu-item" data-translate="nav.aboutUs">
+                                เกี่ยวกับเรา <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/HOMESPECTOR/Homepage/ourstory.html"
+                                        data-translate="nav.ourStory">ประวัติของเรา</a>
+                                </li>
+                                <li><a href="/HOMESPECTOR/Homepage/ourteam.html"
+                                        data-translate="nav.ourTeam">ทีมงานของเรา</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/HOMESPECTOR/Homepage/articles.html" data-translate="nav.articles">บทความ</a></li>
+                        <li><a href="/HOMESPECTOR/Homepage/Review-home.html"
+                                data-translate="nav.reviewHome">รีวิวบ้าน</a></li>
+                        <li><a href="/HOMESPECTOR/Homepage/review_interior.html"
+                                data-translate="nav.reviewInterior">รีวิวตกแต่งบ้าน</a></li>
+                        <li><a href="/HOMESPECTOR/Homepage/joinwithus.html" data-translate="nav.joinUs">รวมงานกับเรา</a>
+                        </li>
+                        <li><a href="/HOMESPECTOR/Homepage/contactus.html" data-translate="nav.contact">ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fullscreen Navigation -->
+                <div id="fullscreen-menu" class="fullscreen-menu">
+                    <!-- Close Icon -->
+                    <i id="close-icon" class="fas fa-times"></i>
+                    <header class="top-bar">
+                        <div class="container">
+                            <!-- Social Icons -->
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/t.homeinspector/?locale=th_TH">
+                                    <img src="/HOMESPECTOR/icon/ICON/Fb.png" alt="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/t.homeinspector/">
+                                    <img src="/HOMESPECTOR/icon/ICON/IG.png" alt="Instagram">
+                                </a>
+                                <a href="https://page.line.me/t.home?openQrModal=true">
+                                    <img src="/HOMESPECTOR/icon/ICON/line.png" alt="Line">
+                                </a>
+                                <a href="tel:082-045-6165">
+                                    <img src="/HOMESPECTOR/icon/ICON/phone.png" alt="Phone">
+                                </a>
+                            </div>
+
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="/HOMESPECTOR/Homepage/index.html">
+                                    <img src="/HOMESPECTOR/img/s1.png" alt="T. Home Inspector Logo">
+                                </a>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="actions">
+                                <!-- Language Switcher -->
+                                <div class="language-switcher">
+                                    <a href="?lang=th" class="lang-link">
+                                        <img src="/HOMESPECTOR/icon/ICON/thai.png" alt="Thai" title="ภาษาไทย">
+                                    </a>
+                                    <a href="?lang=en" class="lang-link">
+                                        <img src="/HOMESPECTOR/icon/ICON/eng.png" alt="English" title="English">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Navigation Content -->
+                    <div class="menu-content">
+                        <!-- Topics Section -->
+                        <div class="menu-section">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="/HOMESPECTOR/Homepage/index.html" data-translate="nav.home">หน้าหลัก</a>
+                                </li>
+                                <li><a href="/HOMESPECTOR/Homepage/service.html"
+                                        data-translate="nav.services">บริการ</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/promotion.html"
+                                        data-translate="nav.promotion">สิทธิพิเศษ</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/projects_media.html"
+                                        data-translate="nav.projects">ผลงาน</a></li>
+
+                                <!-- Dropdown Menu -->
+                                <li class="dropdown1">
+                                    <a href="#" class="menu-item1" data-translate="nav.aboutUs">
+                                        เกี่ยวกับเรา <span class="dropdown-icon1"><i
+                                                class="fa-solid fa-caret-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu1">
+                                        <li><a href="/HOMESPECTOR/Homepage/ourstory.html"
+                                                data-translate="nav.ourStory">ประวัติของเรา</a>
+                                        </li>
+                                        <li><a href="/HOMESPECTOR/Homepage/ourteam.html"
+                                                data-translate="nav.ourTeam">ทีมงานของเรา</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="/HOMESPECTOR/Homepage/articles.html"
+                                        data-translate="nav.articles">บทความ</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/Review-home.html"
+                                        data-translate="nav.reviewHome">รีวิวบ้าน</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/review_interior.html"
+                                        data-translate="nav.reviewInterior">รีวิวตกแต่งบ้าน</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/joinwithus.html"
+                                        data-translate="nav.joinUs">รวมงานกับเรา</a></li>
+                                <li><a href="/HOMESPECTOR/Homepage/contactus.html"
+                                        data-translate="nav.contact">ติดต่อเรา</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Series & Podcast Section -->
+                        <div class="menu-section">
+                            <h3>Content/Articles</h3>
+                            <ul>
+                                <li><a href="#">รายการทั้งหมด</a></li>
+                                <li><a href="#">มนุษย์ต่างวัย Talk</a></li>
+                                <li><a href="#">บพุทธ์ที่โครฟ</a></li>
+                                <li><a href="#">Life Long Investing</a></li>
+                                <li><a href="#">มนุษย์ต่างวัย Podcast</a></li>
+                                <li><a href="#">ชีวิตชีวา 2</a></li>
+                                <li><a href="#">The O Idol</a></li>
+                                <li><a href="#">มนุษย์ต่างวัย Talk</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Other Sections -->
+                        <div class="menu-section">
+                            <h3><a href="/HOMESPECTOR/Homepage/Contactus.html" class="menu-link">Contact</a></h3>
+                            <h3><a href="/HOMESPECTOR/Homepage/projects_media.html" class="menu-link">Projects</a></h3>
+                            <h3><a href="/HOMESPECTOR/Homepage/joinwithus.html" class="menu-link">joinwithus</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <a href="tel:02-454-2043" class="contact-item" data-aos="fade-up-left">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span>โทร 02-454-2043</span>
+                </a>
+                <a href="https://line.me/R/ti/p/@t.home" target="_blank" class="contact-item" data-aos="fade-up-right">
+                    <div class="icon">
+                        <i class="fa-brands fa-line" style="color: #00a347;"></i>
+                    </div>
+                    <span>@t.home</span>
+                </a>
+            </div>
+            <section class="article-section" data-aos="fade-up">
+                <h1 class="article-title">บทความ</h1>
+                <p class="article-description">
+                    ความรู้เกี่ยวกับ งานตรวจรับบ้านเเละคอนโดก่อนโอนกรรมสิทธิ์
+                </p>
+
+                <div class="content-container">
+                    <h3>เราต่างจากที่อื่นอย่างไร What Makes US Different?</h3>
+                    <!-- Main Image Section -->
+                    <div class="main-image-container">
+                        <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/b764dd4c5037789dd95efac895cfbac14aa2a041.jpg"
+                            alt="Main LAN Design" class="main-image">
+                        <p class="main-image-caption">
+                            เราต่างจากที่อื่นอย่างไร What Makes US Different?
+                        </p>
+                    </div>
+
+                    <!-- House Inspection Information Section -->
+                    <section class="inspection-info">
+                        <img src="https://www.thomeinspector.com/assets/upload/flora/074abc175524de3e1e41da6f54f30a3e56a6636b.png"
+                            alt="ภาพประกอบการตรวจบ้าน" class="inspection-image">
+
+                        <h2>ทำความเข้าใจ การตรวจบ้านก่อนโอนคืออะไร?</h2>
+                        <p>
+                            การตรวจบ้านก่อนโอนเป็นการตรวจสอบเพื่อค้นหาข้อบกพร่องของบ้านและตรวจสอบให้มั่นใจว่าบ้านของเรามีสภาพที่สมบูรณ์
+                            ภายในบ้านที่สำคัญ ได้แก่ ระบบไฟฟ้า ระบบประปาและสุขาภิบาล งานวัสดุปิดผิวโครงสร้าง งานฝ้าเพดาน
+                            และงานก่อสร้างอื่น ๆ
+                            วัสดุต่างๆต้องมีสัดส่วนตามมาตรฐานและสามารถใช้งานได้ตามหน้าที่ที่ตั้งไว้
+                        </p>
+                        <p>
+                            การตรวจสอบบ้านก่อนโอนมีความสำคัญอย่างยิ่ง เนื่องจากเมื่อบ้านมีข้อบกพร่อง
+                            อาจมีค่าใช้จ่ายเพิ่มเติมในภายหลังหากไม่ได้มีการตรวจสอบตั้งแต่ก่อนส่งมอบบ้าน
+                            หรือเรียกว่าบ้านชำรุด ซึ่งเป็นปัญหาที่อาจสร้างความไม่พอใจในระยะยาวได้
+                            เพราะฉะนั้นการตรวจสอบตามหลักวิศวกรรมจะช่วยให้เจ้าของบ้านสามารถดำเนินการแก้ไขข้อผิดพลาดก่อนโอนกรรมสิทธิ์ได้
+                        </p>
+                    </section>
+
+                    <!-- Web Application Features Section -->
+                    <section class="web-application">
+                        <h2>บริษัทตรวจบ้านที่มี WEB-APPLICATION ตรวจบ้านออนไลน์เป็นของตัวเอง</h2>
+                        <p>
+                            บริษัทของเรามีบริการตรวจบ้านที่ทันสมัยและมีเจ้าหน้าที่วิศวกรที่มีความเชี่ยวชาญในการตรวจสอบบ้านก่อนโอน
+                            โดยใช้แพลตฟอร์มออนไลน์ที่ช่วยให้การตรวจบ้านเป็นเรื่องง่ายและสะดวกขึ้น
+                        </p>
+                        <p>
+                            ทางบริษัทได้นำระบบ Web-Application มาช่วยในการจัดเก็บข้อมูลการตรวจสอบบ้านในรูปแบบดิจิทัล
+                            ทำให้กระบวนการทำงานมีประสิทธิภาพสูงขึ้น ตั้งแต่การบันทึกข้อมูลข้อบกพร่อง
+                            การจัดทำรายงานการตรวจสอบ
+                            ไปจนถึงการออกเอกสารการตรวจในรูปแบบ PDF ซึ่งสามารถใช้งานได้ทั้งบนมือถือและคอมพิวเตอร์
+                        </p>
+
+                        <div class="features">
+                            <div class="feature-image">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/ba58a6d918146329335994bc5b2c2fca4936645b.jpg"
+                                    alt="Feature Display">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Benefits of Home Inspection Section -->
+                    <section class="inspection-benefits">
+                        <p>
+                            ต.ตรวจบ้าน มีระบบสำหรับบริษัทผู้พัฒนาบ้าน หรือ Developer ให้เข้าดูรายการดีเฟค
+                            แยกดูรายการตามหมวดงาน และอัพเดตการแก้ไขรายการดีเฟคได้
+                            ลิงก์ไปยังระบบสำหรับเจ้าของบ้าน
+                            ให้เข้าดูรายงานออนไลน์และสามารถติดตามสถานะรายการดีเฟคผ่านการอัพเดตการแก้ไขงานของทางโครงการได้
+                        </p>
+
+                        <blockquote>
+                            "เรานำปัญหาที่พบจากการตรวจบ้านทุกหลังมาพัฒนาปรับปรุงระบบเว็บแอพลิเคชันให้มีประสิทธิภาพอย่างต่อเนื่อง
+                            เพื่อครอบคลุมการให้บริการตรวจรับบ้านกับเราได้อย่างมีประสิทธิภาพมากที่สุด"
+                        </blockquote>
+
+                        <p>
+                            ต.ตรวจบ้านให้ความสำคัญกับระบบที่เป็นหัวใจหลักสำคัญของบ้าน เรามี Template
+                            รูปแบบของรายการตรวจบ้าน
+                            หรือเรียกให้เข้าใจได้ง่ายๆ ว่าเป็น Checklist (เช็กลิส) ของรายการตรวจ ระบบไฟฟ้า ระบบสุขาภิบาล
+                            งานหลังคา และการรั่วซึม
+                            ทำให้เราสามารถตรวจสอบงานระบบหลักตัวบ้านได้ตามมาตรฐานของบริษัท
+                            ไม่มีการลืมตรวจอย่างใดอย่างหนึ่งที่หน้างาน
+                            และมีข้อมูล สเปก การใช้งาน รวมถึงรายละเอียดอื่นๆ ของตัวบ้านที่เจ้าของบ้านควรรู้เอาไว้
+                        </p>
+
+                        <p>
+                            เจ้าของบ้านสามารถนำข้อมูลจากรายงานตรวจบ้านไปใช้ประโยชน์ได้จริงๆ
+                            มากกว่าการตรวจสอบและทำงานรายงานที่มีแค่รูปกับข้อบกพร่องหลายร้อยข้อ
+                            เพื่อให้เล่มรายงานหนาๆ ดูมีรายการดีเฟคเยอะ ซึ่ง 90%
+                            ของรายการดีเฟคหลายร้อยข้ออาจจะเป็นในเรื่องความสวยงาม สีด่าง สีแตกร้าว งานยาแนว ซิลิโคน
+                            ซึ่งจริงๆ แล้ว ไม่ใช่หัวใจสำคัญในการตรวจบ้าน
+                        </p>
+                        <div class="features">
+                            <div class="feature-image">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/0665e38d692df8c998463662fb992f9d9706bf32.jpg"
+                                    alt="Feature Display">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/8f8944cf608140d0bb3fd943b5a2ee8f68b743be.jpg"
+                                    alt="Feature Display">
+                            </div>
+                        </div>
+                        <p>
+                            ต.ตรวจบ้าน เป็นผู้นำด้านการตรวจบ้าน ทั้งมาตรฐานการให้บริการ การใช้อุปกรณ์การตรวจที่ทันสมัย
+                            มีกล้องอินฟาเรดตรวจการรั่วซึมที่ตาเปล่ามองไม่เห็นและบินโดรนตรวจงานหลังคาทุกหลังโดยไม่มีค่าใช้จ่ายเพิ่มเติม
+                        </p>
+                        <div class="features">
+                            <div class="feature-image">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/4bd6f9609edc028cf4a43e77db21a58a05aaf74f.png"
+                                    alt="Feature Display">
+                            </div>
+                        </div>
+                        <h3>มีมาตรฐานสากล ISO29110-4-3 Service Delivery รองรับ</h3>
+                        <p>
+                            ต.ตรวจบ้าน จดทะเบียนเป็นบริษัทและได้รับอนุญาตประกอบวิชาชีพวิศวกรรมควบคุมในรูปแบบนิติบุคคล
+                            รับรองจากสภาวิศวกร
+                            จึงมั่นใจได้ในการทํางานเป็นระบบแบบมืออาชีพ มีความน่าเชื่อถือ และการทำงานเป็นทีมของเรา
+                            ทีมช่างมีประสบการณ์และเชี่ยวชาญในการตรวจบ้านทุกคน
+                        </p>
+
+                        <blockquote>
+                            เราตรวจบ้านเป็นอาชีพหลัก ไม่ใช่อาชีพเสริม
+                            ไม่ใช่พนักงานหรือคนในบริษัทอสังหาริมทรัพย์ที่ออกมาตรวจรับงานตัวเอง
+                            และไม่มีการส่งต่องานให้ซับเพื่อหัวคิว
+                        </blockquote>
+
+                        <p>
+                            ต.ตรวจบ้าน ได้รับการรับรองมาตรฐานสากล ISO/IEC 29110-4-3 Service delivery <br>
+                            (Software Life Cycle Profiles and Guidelines for Very Small Entities (VSEs) standards Part
+                            4-3) <br>
+                            ซึ่งเป็นมาตรฐานที่ให้การรับรองคุณภาพในด้านกระบวนการพัฒนาการให้บริการที่มีประสิทธิอย่างเป็นทางการ
+                            เพราะเรามุ่งเน้น การให้บริการที่มีคุณภาพและมีประสิทธิภาพที่ดีที่สุด
+                            ให้กับลูกค้ามาอย่างต่อเนื่องตลอดจนการพัฒนาเว็บแอพพลิเคชั่นในการตรวจบ้านเข้ามารองรับการทำงานให้ครอบคลุมทุกกระบวนการในการให้บริการตรวจรับบ้านจากเรา
+                            ทําให้เราเป็น
+                            บริษัทตรวจบ้านอันดับ 1 ที่ลูกค้าบอกต่อมากที่สุด
+                            ไว้วางใจเลือกใช้บริการให้ตรวจบ้านโครงการแบรนด์ชั้นนําต่างๆและเป็นผู้นําด้านการตรวจบ้านอันดับต้นๆ
+                            ของประเทศ
+                        </p>
+                        <div class="features">
+                            <div class="feature-image">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/f2c25f7bd12290ddc279ffa1408ca88cd26c0260.jpg"
+                                    alt="Feature Display">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/166ca4b10a6a260ecf1bedf56baae07158fe72e7.jpg"
+                                    alt="Feature Display">
+                            </div>
+                        </div>
+                        <h3>บริษัทตรวจบ้านที่มี Review จากลูกค้า ดารา อินฟลูเอ็นเซอร์มากที่สุด</h3>
+                        <div class="features">
+                            <div class="feature-image">
+                                <img src="https://www.thomeinspector.com/assets/upload/flora/b421be8abe220a75dc09c3b9859c2cc4b771df65.png"
+                                    alt="Feature Display">
+                            </div>
+                        </div>
+                        <blockquote>
+                            ด้วยการตรวจสอบที่มีมาตรฐาน มีความละเอียดและใส่ใจในทุกขั้นตอนการให้บริการ ทำให้ ต.ตรวจบ้าน
+                            เป็นบริษัทตรวจบ้านที่ลูกค้าบอกต่อมากที่สุด มีรีวิวจากลูกค้า ดารา
+                            อินฟลูเอ็นเซอร์คนดังจากหลายวงการ เลือกใช้บริการตรวจรับบ้านก่อนโอนกับเรามากที่สุด
+                        </blockquote>
+                    </section>
+                    <section class="video-section">
+                        <h2>รีวิวตรวจบ้าน</h2>
+
+                        <div class="video-container">
+                            <!-- Video 1 -->
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านหมอริท เรืองฤทธิ์</h3>
+                                <iframe width="100%" height="315"
+                                    src=https://www.youtube.com/embed/Z1k8_9TTiAQ?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านหมอริท</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/6FtN8ikEH-g?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านคุณป๊อป ปองกูล</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/AJKDDf57oZ4?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <!-- Video 4 -->
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านเพิ่มเติม</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/3GeAmWJp_1k?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านเพิ่มเติม</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/H_KsxaBh6GI?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านเพิ่มเติม</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/YsGW-3vk89g?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านเพิ่มเติม</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/oOj5JxDaXxk?wmode=opaque" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video-item">
+                                <h3>รีวิวตรวจบ้านเพิ่มเติม</h3>
+                                <iframe width="100%" height="315"
+                                    src="https://www.youtube.com/embed/8B-AzF9qI5I?si=ltdde5fUn96eMTma" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Tag Section -->
+                    <div class="tag-section">
+                        <button class="tag-btn">ตตรวจบ้าน</button>
+                        <button class="tag-btn">ต่อเติมบ้าน</button>
+                        <button class="tag-btn">ตรวจคอนโด</button>
+                        <button class="tag-btn">homeinspector</button>
+                    </div>
+
+                    <!-- Article Display Section -->
+                    <div id="article-list"></div>
+
+
+                    <!-- Social Share Section -->
+                    <div class="social-share">
+                        <span>SHARE :</span>
+                        <a href="https://www.facebook.com/t.homeinspector/?locale=th_TH">
+                            <img src="/HOMESPECTOR/icon/ICON/Fb.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/t.homeinspector/">
+                            <img src="/HOMESPECTOR/icon/ICON/IG.png" alt="Instagram">
+                        </a>
+                        <a href="https://page.line.me/t.home?openQrModal=true">
+                            <img src="/HOMESPECTOR/icon/ICON/line.png" alt="Line">
+                        </a>
+                        <a href="#" id="share-icon">
+                            <i class="fa-solid fa-share" aria-label="Share"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="carousel-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h2>Other Articles</h2>
+                <div class="content-carousel-container">
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <div class="content-carousel">
+                        <!-- Item 1 -->
+                        <a href="/HOMESPECTOR/Homepage/articles_view3.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/90dbea8d588eb5f86ae1bab8ab3ad45ecec27944.jpg"
+                                alt="Content 1">
+                            <div class="content-carousel-info">
+                                <h3>....... <i class="fa-solid fa-circle-arrow-right"></i></h3>
+                            </div>
+                        </a>
+                        <a href="/HOMESPECTOR/Homepage/articles_view2.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/b764dd4c5037789dd95efac895cfbac14aa2a041.jpg"
+                                alt="Content 1">
+                            <div class="content-carousel-info">
+                                <h3>เราต่างจากที่อื่นอย่างไร What Makes US Different?<i
+                                        class="fa-solid fa-circle-arrow-right"></i></h3>
+                            </div>
+                        </a>
+                        <!-- Item 2 -->
+                        <a href="/HOMESPECTOR/Homepage/articles_view6.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/e49cf3ed20f9f59a2a7d6576f65e9a786d2e4047.jpg"
+                                alt="Content 2">
+                            <div class="content-carousel-info">
+                                <h3>สิ่งที่ต้องรู้เกี่ยวกับ EV Charger <i class="fa-solid fa-circle-arrow-right"></i>
+                                </h3>
+                            </div>
+                        </a>
+
+                        <!-- Item 3 -->
+                        <a href="/HOMESPECTOR/Homepage/articles_view9.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/f2131033b23c18668dccb3ecfbe4e8f11ca289ff.jpg"
+                                alt="Content 3">
+                            <div class="content-carousel-info">
+                                <h3>การตรวจเช็คเครื่องปรับอากาศ <i class="fa-solid fa-circle-arrow-right"></i></h3>
+                            </div>
+                        </a>
+                        <!-- Item 4 -->
+                        <a href="/HOMESPECTOR/Homepage/articles_view7.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/552982ce38cf40320ec81c960d02a9f76204c99e.jpg"
+                                alt="Content 4">
+                            <div class="content-carousel-info">
+                                <h3>ความแตกต่างระหว่างมิเตอร์ปกติกับมิเตอร์ TOU <i
+                                        class="fa-solid fa-circle-arrow-right"></i></h3>
+                            </div>
+                        </a>
+                        <!-- Item 5 -->
+                        <a href="/HOMESPECTOR/Homepage/articles_view4.html" class="content-carousel-item">
+                            <img src="https://www.thomeinspector.com/assets/upload/newsThumbnail/0cdfa8d1785d2c2abfab80bdf78bcb4bafa523b3.jpg"
+                                alt="Content 5">
+                            <div class="content-carousel-info">
+                                <h3>แจกฟรี!!! ebook ความรู้ระบบไฟฟ้าภายในบ้าน<i
+                                        class="fa-solid fa-circle-arrow-right"></i></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-btn next-btn">❯</button>
+                </div>
+            </section>
+
+
+            <section class="footer">
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                            <h2 class="footer-title">
+                                <img src="/HOMESPECTOR/img/footer_logo.png" alt="logo" class="footer-logo">
+                            </h2>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/t.homeinspector/?locale=th_TH">
+                                    <img src="/HOMESPECTOR/icon/ICON/Fb.png" alt="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/t.homeinspector/">
+                                    <img src="/HOMESPECTOR/icon/ICON/IG.png" alt="Instagram">
+                                </a>
+                                <a href="https://page.line.me/t.home?openQrModal=true">
+                                    <img src="/HOMESPECTOR/icon/ICON/line.png" alt="Line">
+                                </a>
+                                <a href="tel:082-045-6165">
+                                    <img src="/HOMESPECTOR/icon/ICON/phone.png" alt="Phone">
+                                </a>
+                                <a href="https://www.tiktok.com/@thomeinspector">
+                                    <img src="/HOMESPECTOR/icon/ICON/Tiktok.png" alt="TikTok">
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC1BPUCVPBW4-ml7MrxQWjug">
+                                    <img src="/HOMESPECTOR/icon/ICON/YB.png" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-center">
+                            <h3 class="toggle-menu" onclick="toggleFooterMenu('nav-menu')">
+                                Navigation <span class="toggle-icon">+</span>
+                            </h3>
+                            <ul id="nav-menu" class="footer-menu">
+                                <li><a href="index.html">หน้าหลัก</a></li>
+                                <li><a href="service.html">บริการ</a></li>
+                                <li><a href="promotion.html">สิทธิพิเศษ</a></li>
+                                <li><a href="projects_media.html">ผลงาน</a></li>
+                                <li><a href="articles.html">บทความ</a></li>
+                                <li><a href="contactus.html">ติดต่อเรา</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- บทความ -->
+                        <div class="footer-center">
+                            <h3 class="toggle-menu" onclick="toggleFooterMenu('article-menu')">
+                                บทความ <span class="toggle-icon">+</span>
+                            </h3>
+                            <ul id="article-menu" class="footer-menu">
+                                <li><a href="#">ไฟฟ้า</a></li>
+                                <li><a href="#">อุปกรณ์</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-right">
+                            <h3>We Accept</h3>
+                            <div class="payment-logos">
+                                <img src="/HOMESPECTOR/img/visacard.png" alt="Visa">
+                                <img src="/HOMESPECTOR/img/Mastercard.webp" alt="MasterCard">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2024 T.HOME INSPECTOR. All rights reserved.</p>
+                    </div>
+                </footer>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="/HOMESPECTOR/JS/Toggle_Navbar.js"></script>
+    <script src="/HOMESPECTOR/JS/upload_date.js"></script>
+    <script src="/HOMESPECTOR/JS/dropdown.js"></script>
+    <script src="/HOMESPECTOR/JS/content_carousel.js"></script>
+    <script src="/HOMESPECTOR/JS/article_tag.js"></script>
+    <script src="/HOMESPECTOR/JS/search_ham.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/HOMESPECTOR/JS/article_tag.js"></script>
+    <script src="/HOMESPECTOR/JS/share_icon.js"></script>
+
+</body>
+
+</html>
