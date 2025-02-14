@@ -739,7 +739,7 @@ html, body {
 .services {
     position: relative;
     background: none;
-    background-image: url("/img/hero-bg3.webp");
+    background-image: url("/HOMESPECTOR/img/hero-bg3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -754,6 +754,7 @@ html, body {
     padding: 50px 20px;
     border-radius: 0;
     z-index: 1;
+    margin-bottom: 30px;
 }
 
 .services::before {
@@ -845,7 +846,6 @@ html, body {
 
     .services {
         padding: 30px 15px;
-        margin-bottom: 30px;
     }
 
     .service-card {
@@ -856,11 +856,15 @@ html, body {
 }
 
 
+
+/* Wrapper Section */
 .wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 50px 20px;
 }
+
 
 .inspection-info {
     display: flex;
@@ -914,7 +918,6 @@ html, body {
     transition: all 0.3s ease;
     margin-top: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    /* Soft shadow */
     outline: none;
     text-decoration: none;
 }
@@ -938,7 +941,7 @@ html, body {
 }
 
 /* Right Image Section */
-.info-image {
+/* .info-image {
     flex: 1;
     overflow: hidden;
     display: flex;
@@ -952,7 +955,7 @@ html, body {
     object-fit: cover;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-}
+} */
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -965,11 +968,11 @@ html, body {
         padding: 30px;
     }
 
-    .info-image img {
+    /* .info-image img {
         width: 100%;
         height: auto;
         border-radius: 0;
-    }
+    } */
 }
 
 
@@ -1884,8 +1887,6 @@ button.next-btn:hover {
     }
 }
 
-
-
 /* Stats Section with Skewed Background */
 .stats-section {
     background: linear-gradient(90deg, rgba(105, 210, 241, 1) 15%, rgba(255, 131, 217, 1) 62%, rgba(0, 212, 255, 1) 100%);
@@ -1987,13 +1988,15 @@ button.next-btn:hover {
     }
 
     .stats-container {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 10px; 
     }
 
     .stat-box {
-        width: 90%;
-        max-width: 250px;
+        width: 45%; 
+        max-width: 200px;
     }
 
     .stat-box h2 {
@@ -2004,6 +2007,15 @@ button.next-btn:hover {
         font-size: 0.9em;
     }
 }
+
+/* Extra Small Screens (Phones under 480px) */
+@media screen and (max-width: 480px) {
+    .stat-box {
+        width: 48%; 
+        max-width: 180px; 
+    }
+}
+
 
 
 /* FAQ */
