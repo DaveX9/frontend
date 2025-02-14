@@ -52,12 +52,34 @@ function toggleFooterMenu(menuId) {
     if (window.innerWidth <= 768) { // Only allow toggle on mobile
         if (menu.style.display === "block") {
             menu.style.display = "none";
-            header.classList.remove("active");
             icon.textContent = "+"; // Change back to +
         } else {
-            menu.style.display = "block";
-            header.classList.add("active");
+            // Close all menus before opening a new one
+            document.querySelectorAll(".footer-menu").forEach(item => item.style.display = "none");
+            document.querySelectorAll(".toggle-icon").forEach(i => i.textContent = "+");
+
+            menu.style.display = "block"; // Show the list items
             icon.textContent = "−"; // Change to -
         }
     }
 }
+
+// Ensure that the + symbol is always visible on mobile
+window.addEventListener("resize", function() {
+    if (window.innerWidth > 768) {
+        document.querySelectorAll(".footer-menu").forEach(item => item.style.display = "block");
+        document.querySelectorAll(".toggle-icon").forEach(i => i.textContent = "");
+    } else {
+        document.querySelectorAll(".footer-menu").forEach(item => item.style.display = "none");
+        document.querySelectorAll(".toggle-icon").forEach(i => i.textContent = "+");
+    }
+});
+
+// Run on page load to apply correct styles based on screen width
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerWidth <= 768) {
+        document.querySelectorAll(".footer-menu").forEach(item => item.style.display = "none");
+        document.querySelectorAll(".toggle-icon").forEach(i => i.textContent = "+");
+    }
+});
+

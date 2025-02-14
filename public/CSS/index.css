@@ -2339,49 +2339,16 @@ button.next-btn:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .footer-menu {
+        display: none; /* Hide menus initially */
+        padding-left: 15px;
+        transition: max-height 0.3s ease-in-out;
     }
 
-    .footer-left {
-        order: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .social-icons {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .footer-center {
-        order: 2;
-        width: 100%;
-        text-align: left;
-        padding-left: 10px;
-    }
-
-    .footer-center h3 {
-        text-align: left;
-    }
-
-    .footer-right {
-        order: 3;
-        width: 100%;
-        text-align: right;
-        padding-right: 10px;
-    }
-
-    .payment-logos {
-        justify-content: flex-end;
+    .toggle-icon {
+        display: inline-flex;
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 10px;
     }
 }
-
-
-
