@@ -623,7 +623,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/HOMESPECTOR/img/hero-bg1.jpg') no-repeat center center/cover;
+    background: url('/public/img/hero-bg1.jpg') no-repeat center center/cover;
     transform-origin: center;
     animation: zoomAnimation 10s infinite alternate ease-in-out;
 }
@@ -762,7 +762,7 @@ header {
 .services {
     position: relative;
     background: none;
-    background-image: url("/HOMESPECTOR/img/hero-bg3.jpg");
+    background-image: url("/public/img/hero-bg3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

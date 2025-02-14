@@ -847,7 +847,7 @@ p {
   position: relative;
   text-align: center;
   padding: 60px 20px;
-  background-image: url("/HOMESPECTOR/img/hero-bg1.jpg");
+  background-image: url("/public/img/hero-bg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

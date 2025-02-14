@@ -1,7 +1,7 @@
 // Ensure the DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch articles.html
-    fetch('/HOMESPECTOR/Homepage/articles.html')
+    fetch('articles.html')
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Failed to load articles.html');

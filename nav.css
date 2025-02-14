@@ -789,7 +789,7 @@ body {
   transform: translate(-50%, -50%);
   width: 50%;
   height: 40%;
-  background: url('/HOMESPECTOR/img/ourservice.png') center center/cover no-repeat, rgba(0, 0, 0, 0.4); 
+  background: url('/public/img/ourservice.png') center center/cover no-repeat, rgba(0, 0, 0, 0.4); 
   z-index: 1;
   display: flex;
   align-items: center;

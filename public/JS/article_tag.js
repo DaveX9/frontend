@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "ต.ตรวจบ้าน - ตรวจสอบก่อนโอน",
             content: "<p>บทความเกี่ยวกับการตรวจบ้านก่อนโอนกรรมสิทธิ์...</p>",
             links: {
-                "ตตรวจบ้าน": "/HOMESPECTOR/Homepage/articles_view.html",
-                "homeinspector": "/HOMESPECTOR/Homepage/articles_view2.html",
+                "ตตรวจบ้าน": "articles_view.html",
+                "homeinspector": "articles_view2.html",
             },
             tags: ["ตตรวจบ้าน", "homeinspector"],
         },
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "การต่อเติมบ้านต้องรู้อะไรบ้าง?",
             content: "<p>คำแนะนำเกี่ยวกับการต่อเติมบ้านให้ถูกต้องตามกฎหมาย...</p>",
             links: {
-                "ต่อเติมบ้าน": "/HOMESPECTOR/Homepage/articles_view3.html",
+                "ต่อเติมบ้าน": "articles_view3.html",
             },
             tags: ["ต่อเติมบ้าน"],
         },
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "ตรวจคอนโดก่อนรับมอบต้องเช็คอะไร?",
             content: "<p>ข้อควรรู้ก่อนตรวจรับคอนโดใหม่...</p>",
             links: {
-                "ตรวจคอนโด": "/HOMESPECTOR/Homepage/articles_view4.html",
+                "ตรวจคอนโด": "articles_view4.html",
             },
             tags: ["ตรวจคอนโด"],
         },
@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Home Inspector มีความสำคัญอย่างไร?",
             content: "<p>บทความอธิบายเกี่ยวกับบทบาทของ Home Inspector...</p>",
             links: {
-                "homeinspector": "/HOMESPECTOR/Homepage/articles_view5.html",
+                "homeinspector": "articles_view5.html",
             },
             tags: ["homeinspector"],
         },
-        
+
     ];
 
     const articleList = document.getElementById("article-list");

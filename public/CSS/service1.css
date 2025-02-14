@@ -607,7 +607,7 @@ header {
   text-align: center;
   height: 400px;
   /* Adjust the height as needed */
-  background: url(/HOMESPECTOR/img/banner.png) no-repeat center center/cover;
+  background: url(/public/img/banner.png) no-repeat center center/cover;
 }
 
 .hero-overlay h1 {
