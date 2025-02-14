@@ -739,7 +739,7 @@ html, body {
 .services {
     position: relative;
     background: none;
-    background-image: url("/HOMESPECTOR/img/hero-bg3.jpg");
+    background-image: url("/public/img/hero-bg3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2338,21 +2338,50 @@ button.next-btn:hover {
     height: 30px;
 }
 
-/* Show + Icon on Mobile Only */
 @media screen and (max-width: 768px) {
-    .toggle-icon {
-        display: inline-flex;
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .footer-menu {
-        display: none; /* Hide menu initially on mobile */
+
+    .footer-left {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-center {
+        order: 2;
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .footer-center h3 {
+        text-align: left;
+    }
+
+    .footer-right {
+        order: 3;
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .payment-logos {
+        justify-content: flex-end;
     }
 }
 
-/* Ensure Menus Stay Open on Desktop */
-@media screen and (min-width: 769px) {
-    .footer-menu {
-        display: block !important;
-    }
-}
 
 

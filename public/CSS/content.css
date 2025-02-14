@@ -843,7 +843,7 @@ header {
     }
 
     .payment-logos {
-        justify-content: flex-end;
+        justify-content: center;
     }
 }
 
