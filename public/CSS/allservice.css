@@ -678,14 +678,6 @@ header {
   margin-top: -50px;
 }
 
-@media (max-width: 768px) {
-  .service-cards {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-  }
-}
-
 
 
 /* Services Section */
@@ -741,6 +733,7 @@ header {
   position: relative;
 }
 
+/* Call Box */
 .call-box {
   position: absolute;
   bottom: -20px;
@@ -758,6 +751,7 @@ header {
 .call-box i {
   color: #FFC107;
 }
+
 
 
 /* Right Text Section */
@@ -804,34 +798,65 @@ header {
   transform: scale(1.2);
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .service-container {
+@media (max-width: 480px) {
+  .services-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 10px;
   }
 
-  .image-container,
-  .text-container {
+  .image-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .text-container {
-    text-align: center;
+  .image-box {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    border-radius: 8px;
   }
 
   .call-box {
-    position: relative;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 1em;
+    padding: 8px 15px;
+    bottom: 0;
+    margin-top: 10px;
   }
 
-  .image-bg {
-    top: 5%;
-    left: 5%;
+  .text-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .text-container p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .contact-title {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .social-icons a img {
+    width: 20px;
   }
 }
 
@@ -867,53 +892,66 @@ header {
   font-weight: bold;
 }
 
-/* footer */
-.footer {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 30px 20px;
-}
+@media (max-width: 480px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-.footer-left {
-  flex: 1 1 20%;
-  margin-bottom: 20px;
-}
+  .image-box {
+    width: 90%;
+    padding: 10px;
+  }
 
-.footer-logo {
-  height: auto;
-  width: 50%;
-  display: inline-block;
-}
+  .image-box img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
+  .call-box {
+    font-size: 1em;
+    padding: 8px 15px;
+    bottom: 0;
+    margin-top: 10px;
+  }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
+  .text-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
 
-.social-icons a img {
-  width: 20px;
-  height: auto;
-  transition: transform 0.5s ease;
-}
+  .text-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
 
-.social-icons a:hover img {
-  transform: scale(1.2);
+  .text-container p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .contact-title {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .social-icons a img {
+    width: 20px;
+  }
 }
 
 

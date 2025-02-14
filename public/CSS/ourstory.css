@@ -524,6 +524,14 @@ header {
 }
 
 
+/* Fix Overflow Issue */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
 /*line*/
 .contact-container {
   display: flex;
@@ -612,7 +620,7 @@ header {
 /* Fullscreen Story Header */
 .story-header {
   position: relative;
-  width: 100%;
+  width:100vw;
   height: 70vh;
   overflow: hidden;
 }
@@ -672,7 +680,7 @@ header {
 @media (max-width: 768px) {
   .story-header {
     height: 70vh;
-    /* Reduce height for mobile */
+    width: 100%;
   }
 
   .story-header .header-title {
