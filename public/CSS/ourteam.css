@@ -522,6 +522,21 @@ header {
 .menu-link:hover {
     color: var(--hover-color);
 }
+/* Hide search and language switcher by default on mobile */
+@media (max-width: 768px) {
+  .language-switcher,
+  .search-bar {
+      display: none;
+  }
+
+  /* Show inside the fullscreen menu */
+  .fullscreen-menu .language-switcher,
+  .fullscreen-menu .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+}
 
 
 /*line*/
