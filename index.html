@@ -915,6 +915,25 @@
 
     </script>
 
+    <script>
+        document.getElementById("hamburger-icon").addEventListener("click", function() {
+            let menu = document.querySelector(".fullscreen-menu");
+            menu.classList.toggle("active");
+
+            let langSwitcher = document.querySelector(".language-switcher");
+            let searchBar = document.querySelector(".search-bar");
+
+            if (menu.classList.contains("active")) {
+                langSwitcher.style.display = "flex";
+                searchBar.style.display = "flex";
+            } else {
+                langSwitcher.style.display = "none";
+                searchBar.style.display = "none";
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
